@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="/styles/index.css">
+        <link rel="stylesheet" href="/styles/modal.css">
+    {% endblock styles %}
+
+{% block content %}
+    <div id="menu">
+        <h2>Imperuim Gamer</h2>
+        <a href="/create">
+            <span id="market"></span>Registre sua loja</a>
+    </div>
+
+    <main>
+        <div id="main-letter">
+            <h1>Infinite gaming</h1>
+            <h2>Seja encontrado por todos os players do Brasil</h2>
+        </div>
+
+        <div id="main-bottom">
+            <a href="#">
+                <img src="/asserts/search.svg" alt="Buscar">
+            Pesquisar lojas</a>
+        </div>
+    </main>
+{% endblock content %}
+
+{% block modal %}
+<div id="modal" class="hide">
+    <div class="content">
+        <div class="header">
+            <h1>Lojas</h1>
+            <a href="#">Fechar</a>
+        </div>
+
+        <form action="/result">
+            <label for="search">Cidade</label>
+            <div class="search field">
+                <input type="text" name="search" placeholder="Digite o nome da cidade">
+                <button>
+                    <img src="/asserts/search.svg" alt="Buscar">
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="/scripts/modal.js"></script>    
+{% endblock modal %}  

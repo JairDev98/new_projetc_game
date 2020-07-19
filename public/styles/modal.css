@@ -1,0 +1,91 @@
+#modal{
+    background-color: #0a0c14ee;
+    
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top:0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 200ms;
+}
+
+#modal.hide{
+    display: none;
+}
+
+#modal .content{
+    color: white;
+    width: 420px;
+}
+
+#modal .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+}
+
+#modal .header a{
+    background: url("/asserts/close.svg")no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 0.01px;
+}
+
+#modal .header h1{
+    color: white;
+    font-size: 36px;
+    line-height: 42px;
+
+}
+
+#modal form label{
+    color: white;
+    font-size: 20px;
+    line-height: 16px;
+
+    /*pra fazer ele pegar o bloco inteiro*/
+    display: block;
+    margin-bottom: 8px;
+}
+
+#modal form .field{
+    display: flex;
+}
+
+#modal form input{
+    flex: 1;
+
+    background-color: #f0f0f5;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6c6c80;
+}
+
+#modal form button{
+    width: 72px;
+    height: 72px;
+
+    background-color: rgba(30, 144 ,255);
+    border: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+#modal form button img{
+    width: 80%;
+}
+
+#modal form button:hover{
+    background-color: rgb(24, 116, 205);
+}

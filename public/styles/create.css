@@ -1,0 +1,82 @@
+fieldset{
+    margin: 5px auto;
+    max-width: 55vw;
+    background-color: rgb(231, 230, 230);
+    border: none;
+    border-radius: 8px;
+}
+
+fieldset h3{
+    font-size: 28px;
+    color: rgba(79, 148, 205);
+}
+
+fieldset input{
+    font-size: 20px;
+    border: none;
+    width: 99%;
+    border-radius: 8px;
+}
+
+#itens{
+    margin: 5px auto;
+    max-width: 55vw;
+}
+
+#name{
+    max-width: 80%;
+    margin: auto;
+}
+
+.field{
+    margin: 10px;
+    font-size: 17px;
+}
+
+table{
+    width:80%;
+    margin: auto;
+}
+
+#cep{
+    width: 85%; 
+}
+
+#image{
+    width: 7%;
+}
+
+#button{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#button button{
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    background-color:rgba(30, 144 ,255);
+    border-radius: 8px;
+}
+
+#button button:hover{
+    background-color:rgb(24, 116, 205);
+}
+
+/*CONFIGURAÇÕES DAS DIVS*/
+
+#iadress{
+    max-width: 80%;
+    margin: auto;
+}
+
+#contact{
+    max-width: 80%;
+    margin: auto;
+}
+
+#adress .field h3{
+    max-width: 80%;
+    margin: 30px auto;
+}

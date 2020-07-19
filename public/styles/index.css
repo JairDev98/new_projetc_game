@@ -1,0 +1,64 @@
+body{
+    height: 80vh;
+    background: url("/asserts/background-home.svg") no-repeat;
+    background-position: 55vw bottom;
+    background-size: 40%;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    margin-top: 5vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    margin-bottom:10vh;
+}
+
+#main-letter{
+    margin-left: 5px;
+    width: 100%;
+    max-width: 660px;
+    margin-bottom: 10vh;
+}
+
+#main-letter h1{
+    font-size: 60pt;
+    color: rgba(0, 205, 0);
+}
+
+#main-letter h2{
+    font-size: 35pt;
+    color: rgba(72, 209, 204);
+}
+
+#main-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    width: 100%;
+    max-width: 260px;
+    font-size: 25px;
+
+    background-color:rgba(30, 144 ,255);
+    border-radius: 8px;
+    transition: 200ms;
+    padding: 10px;
+}
+
+#main-bottom a{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#main-bottom a img{
+ margin: 0 27px 0 10px;
+ width: 10%;
+}
+
+#main-bottom:hover{
+    background-color:rgb(24, 116, 205);
+}

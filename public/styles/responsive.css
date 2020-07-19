@@ -1,0 +1,50 @@
+@media(max-width: 900px){
+    /*INDEX*/
+    #menu{
+        font-size: 75%;
+    }
+    body{
+        background-image: none;
+    }
+
+    #main-letter h1{
+        text-align: center;
+        font-size: 25pt;
+    }
+
+    #main-letter h2{
+        text-align: center;
+        font-size: 25pt;
+    }
+
+    #main-bottom{
+        font-size: 3vh;
+        max-width: none;
+    }
+    /*CREATE*/
+    fieldset{
+        max-width: 70vw;
+    }
+    /*RESULT*/
+    #field-cards{
+        max-width: none;
+    }
+}
+@media(min-width:1440px){
+    /*INDEX*/
+    body{
+        background-position-x:55vw;
+        background-position-y:15vh;
+    }
+
+    /*RESULT*/
+    #field-cards{
+        max-width: none;
+    }
+}
+@media(min-width:2560px){
+    /*CREATE*/
+   fieldset{
+       size: 400%;
+   }
+}

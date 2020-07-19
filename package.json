@@ -1,0 +1,15 @@
+{
+  "name": "NPG",
+  "version": "1.0.0",
+  "description": "VIRTUAL GAME STORE",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "author": "JAIR APARECIDO DE OLIVEIRA",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^4.2.0"
+  }
+}

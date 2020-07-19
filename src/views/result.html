@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/result.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/menu_return.html" %}
+
+    {% if total > 0 %}
+
+        <div id="founded">
+            {% if total > 1 %}
+                <h3><strong>{{total}}&nbsp;</strong>Lojas encontradas</h3>
+            {%else%}
+                <h3><strong>{{total}}&nbsp;</strong>Loja encontrada</h3>
+            {% endif %}
+        </div>
+
+
+        <div id="field-cards">
+
+            {% for place in places %}
+
+                <div class="field-store">
+                    <img src="{{place.image}}" alt="{{place.name}}">
+                    <!--Botão de cada card-->
+                        <h1>{{place.name}}</h1>
+                        <div class="field-informs">
+                            <h4>Rua:{{place.street}}</h4>
+
+                            {% if place.cep != "" %}
+                                <h4>Cep:{{place.cep}}</h4>
+                            {% endif %}
+
+                            <h4>Cidade:{{place.city}}</h4>    
+                            <h4>Estado:{{place.state}}</h4>
+
+                            {% if place.point != "" %}
+                                <h4>Ponto de referencia:{{place.point}}</h4>
+                            {% endif %}
+            
+                            <h4>Hora de Abertura:{{place.hour_ini}}</h4>
+                            <h4>Hora de Fechamento:{{place.hour_fin}}</h4>
+
+                            {% if place.site != "" %}
+                                <a href="{{place.site}}">
+                                <h4>Visite o site</h4>
+                            </a>
+                            {% endif %}
+
+                            {% if place.email != "" %}
+                                <h4>Email:{{place.email}}</h4>
+                            {% endif %}
+                            
+                            <h4>Telefone ou Whatsapp:{{place.whats}}</h4>
+                        </div>
+                    <!--Fim botão cada card-->
+                </div>
+            {% endfor %}
+
+        </div>
+        {%else%}
+
+        <h1 id="not-found">Nenhuma Loja cadastrada nessa cidade</h1>
+
+    {% endif %}
+
+{% endblock content %}
