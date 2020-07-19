@@ -6,7 +6,7 @@ Projeto de site de busca de lojas de games por cidade
 - Visual Studio Code
 - Bash
 - Sqlite3
-- Nunjuncks
+- Nunjucks
 
 # Versão 1.0
 
