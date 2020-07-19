@@ -3,10 +3,10 @@
 Projeto de site de busca de lojas de games por cidade
 
 ### Necessário para execução:
--> Visual Studio Code
-    - Bash
-    - Sqlite3
-    - Nunjuncks
+- Visual Studio Code
+- Bash
+- Sqlite3
+- Nunjuncks
 
 # Versão 1.0
 
